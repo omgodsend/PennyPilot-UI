@@ -1,0 +1,59 @@
+.navbar {
+  width: 50px;
+  height: 90vh;
+  padding-top: var(--mantine-spacing-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* You can use your theme colors directly if they are defined in the theme */
+  background-color: var(--mantine-colors-blue-7); /* Adjust the color index as needed */
+  border-right: 1px solid var(--mantine-colors-gray-8);
+}
+
+.navbarMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start; /* Align items to the start of the flex container */
+   width: 80%; /* Full width of the navbar */
+  gap: 10px; /* Space between links */
+}
+
+.link {
+  width: 50px; /* Fixed width for links */
+  height: 50px; /* Fixed height for links */
+  border-radius: var(--mantine-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mantine-colors-gray-0); /* Adjust text/icon color */
+
+  &:hover {
+    background-color: rgb(117, 117, 229)); }
+
+  &[data-active] {
+    background-color: teal; /* Active state color */
+    color: var(--mantine-colors-gray-0);  }
+  
+}
+
+.active {
+  background-color: teal; /* Active state color */
+  color: var(--mantine-colors-gray-0);  }
+
+  
+.dark-theme .link {
+  color: #ffffff; /* Black icons for dark theme */
+}
+
+
+.navbarBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: var(--mantine-spacing-md); 
+}
+
+
+
